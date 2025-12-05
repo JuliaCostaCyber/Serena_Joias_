@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --marrom: #674b3c;
+    --bege: #d1baa6;
+    --branco-perola: #ccc2b8;
+    --preto: #000000;
+    --cinza: #d9d9d9;
+    --branco: #ffffff;
+    --fundo-site: #DEDDDC;
+    --fundo-site-rodape: #B6B6B6;
+}
+
+@font-face {
+    font-family: RedHatDisplay;
+    src: url(./fonts/Red_Hat_Display/static/RedHatDisplay-MediumItalic.ttf);
+}
+
+/* @font-face {
+    font-family: InriaSerif;
+    src: url(./fonts/Inria_Serif/InriaSerif-LightItalic.ttf);
+    font-weight: lighter;
+} */
+
+body {
+    background-color: var(--fundo-site);
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    /* background-color: #000000; */
+}
+
+header>div.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #d9d9d9; */
+    height: 290px;
+}
+
+.container-flex {
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 300px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.links a {
+    font-size: 30px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--marrom);
+    border-bottom: 1.5px solid var(--marrom)
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao {
+    display: none;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+#sobre {
+    display: flex;
+    gap: 40px;
+    margin-top: 70px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#titulo-sobre{
+    font-size: 50px;
+    margin-top: 40px;
+}
