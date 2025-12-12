@@ -13,18 +13,13 @@
     --branco: #ffffff;
     --fundo-site: #DEDDDC;
     --fundo-site-rodape: #B6B6B6;
+    --caramelo: #B57E32;
 }
 
 @font-face {
     font-family: RedHatDisplay;
     src: url(./fonts/Red_Hat_Display/static/RedHatDisplay-MediumItalic.ttf);
 }
-
-/* @font-face {
-    font-family: InriaSerif;
-    src: url(./fonts/Inria_Serif/InriaSerif-LightItalic.ttf);
-    font-weight: lighter;
-} */
 
 body {
     background-color: var(--fundo-site);
@@ -85,15 +80,297 @@ header>div.container-flex {
     display: block;
 }
 
+/* -------------Sobre nós-------------- */
 #sobre {
     display: flex;
-    gap: 40px;
-    margin-top: 70px;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 60px 80px;
 }
 
-#titulo-sobre{
-    font-size: 50px;
-    margin-top: 40px;
+#sobre img {
+    width: 700px;
+    border-radius: 18px;
+    margin-left: -600px;
+}
+
+#titulo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative;
+    margin-left: 80px;
+}
+
+#titulo h1::after {
+    content: "";
+    display: block;
+    width: 205px;
+    height: 3px;
+    background-color: var(--caramelo);
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+#texto {
+    max-width: 600px;
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-left: 80px;
+    margin-top: 180px;
+
+}
+
+/* ----------------------------
+#sobre-nos img {
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 240px;
+}
+
+#sobre-nos p {
+    width: 420px;
+    font-family: "Recursive", sans-linear;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-top: 240px;
+
+} */
+/* -----------------------Lançamentos------------------------- */
+#lancamentos {
+    font-size: 43px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#lancamentos h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 150px;
+    position: relative;
+    margin-left: 80px;
+}
+
+
+#fotoslancamentos img {
+    margin-top: 140px;
+    align-items: center;
+    margin: 0 10px;
+
+}
+
+#lancamentos::after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 3px;
+    background-color: var(--caramelo);
+    margin-left: 910px;
+    margin-top: 3px;
+
+}
+
+/* ---------------parallax------------- */
+
+/* #parallax{
+    margin-top: 90px;
+    
+}
+ */
+
+/* --------------------atelie-------------------- */
+
+#atelie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+    background-color: #f4f2ef;
+}
+
+.atelie-texto {
+    max-width: 600px;
+}
+
+.atelie-texto h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.atelie-texto h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: var(--caramelo);
+    margin-top: 4px;
+}
+
+.atelie-texto p {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--preto);
+}
+
+.img-atelie {
+    width: 1000px;
+    border-radius: 48px;
+    object-fit: cover;
+}
+
+/* -------- CADASTRE-SE -------- */
+
+#cadastre-se {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.titulo-cadastro {
+    font-size: 48px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-cadastro::after {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 3px;
+    background-color: var(--caramelo);
+    margin: 6px auto;
+}
+
+/* ------ FORMULÁRIO ------ */
+
+.form-box {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    padding: 40px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-box label {
+    font-size: 24px;
+    text-align: left;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: var(--caramelo);
+    color: var(--branco);
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--caramelo);
+}
+
+/* ----------- RODAPÉ ----------- */
+
+#rodape {
+    background-color: #B6B6B6;
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.rodape-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagamento,
+.redes {
+    text-align: center;
+    font-size: 22px;
+}
+
+.pagamento img,
+.redes img {
+    width: 70px;
+    margin: 10px;
+}
+
+.logo-rodape {
+    text-align: center;
+    font-size: 40px;
+}
+
+.logo-rodape img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.arroba {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* -------------------- Responsividade --------------- */
+
+@media screen and (max-width: 768px) {
+#sombra {
+        background-color: #9D562390;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
+    }
+
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+
+nav.menu {
+        /* height: 100vh; */
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: .5s;
+    }
+
 }
