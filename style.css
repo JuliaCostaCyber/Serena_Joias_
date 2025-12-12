@@ -92,7 +92,7 @@ header>div.container-flex {
 #sobre img {
     width: 700px;
     border-radius: 18px;
-    margin-left: -600px;
+    margin-left: -200px;
 }
 
 #titulo h1 {
@@ -102,17 +102,9 @@ header>div.container-flex {
     padding-bottom: 10px;
     position: relative;
     margin-left: 80px;
+    text-decoration: underline var(--caramelo);
 }
 
-#titulo h1::after {
-    content: "";
-    display: block;
-    width: 205px;
-    height: 3px;
-    background-color: var(--caramelo);
-    margin-top: 6px;
-    margin-left: 4px;
-}
 
 #texto {
     max-width: 600px;
@@ -121,68 +113,50 @@ header>div.container-flex {
     text-align: justify;
     margin-left: 80px;
     margin-top: 180px;
-
 }
 
-/* ----------------------------
-#sobre-nos img {
-    width: 420px;
-    border-radius: 20px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-    margin-top: 240px;
-}
-
-#sobre-nos p {
-    width: 420px;
-    font-family: "Recursive", sans-linear;
-    font-size: 18px;
-    line-height: 1.4;
-    text-align: justify;
-    margin-top: 240px;
-
-} */
 /* -----------------------Lançamentos------------------------- */
 #lancamentos {
-    font-size: 43px;
-    text-align: center;
-    margin-top: 100px;
+     text-align: center;
+    margin-top: 40px;
 }
 
 #lancamentos h2 {
     font-size: 48px;
     font-weight: bold;
-    margin: 0;
+    margin: 100px;
     padding-bottom: 150px;
     position: relative;
-    margin-left: 80px;
+    margin-left: 120px;
+    text-decoration: underline var(--caramelo);
+    
+    
 }
 
 
+
 #fotoslancamentos img {
-    margin-top: 140px;
     align-items: center;
     margin: 0 10px;
 
 }
 
-#lancamentos::after {
-    content: "";
-    display: block;
-    width: 380px;
-    height: 3px;
-    background-color: var(--caramelo);
-    margin-left: 910px;
-    margin-top: 3px;
 
-}
+
+
+
 
 /* ---------------parallax------------- */
 
-/* #parallax{
-    margin-top: 90px;
+#parallax {
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/Parallax\ serena.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    margin-bottom: 200px;
+    margin-top: 200px;
     
 }
- */
 
 /* --------------------atelie-------------------- */
 
@@ -192,7 +166,7 @@ header>div.container-flex {
     justify-content: space-between;
     padding: 60px 80px;
     gap: 40px;
-    background-color: #f4f2ef;
+    background-color: #DEDDDC;
 }
 
 .atelie-texto {
@@ -204,28 +178,23 @@ header>div.container-flex {
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
+    text-decoration: underline var(--caramelo);
 }
 
-.atelie-texto h1::after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 3px;
-    background-color: var(--caramelo);
-    margin-top: 4px;
-}
 
 .atelie-texto p {
     font-size: 30px;
     line-height: 1.6;
     text-align: justify;
     color: var(--preto);
+
 }
 
 .img-atelie {
     width: 1000px;
-    border-radius: 48px;
     object-fit: cover;
+    margin-top: 200px;
+
 }
 
 /* -------- CADASTRE-SE -------- */
@@ -233,23 +202,20 @@ header>div.container-flex {
 #cadastre-se {
     text-align: center;
     padding: 60px 0;
+    margin-top: 120px;
+   
 }
 
 .titulo-cadastro {
     font-size: 48px;
-    margin-bottom: 40px;
+    margin-bottom: 120px;
     position: relative;
     display: inline-block;
+     margin-bottom: 120px;
+     text-decoration: underline var(--caramelo);
 }
 
-.titulo-cadastro::after {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 3px;
-    background-color: var(--caramelo);
-    margin: 6px auto;
-}
+
 
 /* ------ FORMULÁRIO ------ */
 
@@ -298,7 +264,7 @@ header>div.container-flex {
 /* ----------- RODAPÉ ----------- */
 
 #rodape {
-    background-color: #B6B6B6;
+    background-color: var(--fundo-site-rodape);
     padding: 50px 0;
     margin-top: 80px;
 }
@@ -318,8 +284,9 @@ header>div.container-flex {
 }
 
 .pagamento img,
+
 .redes img {
-    width: 70px;
+    width: 50px;
     margin: 10px;
 }
 
@@ -329,7 +296,7 @@ header>div.container-flex {
 }
 
 .logo-rodape img {
-    width: 120px;
+    width: 290px;
     margin-bottom: 10px;
 }
 
@@ -341,7 +308,7 @@ header>div.container-flex {
 /* -------------------- Responsividade --------------- */
 
 @media screen and (max-width: 768px) {
-#sombra {
+    #sombra {
         background-color: #9D562390;
         backdrop-filter: blur(10px);
         z-index: 1;
@@ -357,7 +324,7 @@ header>div.container-flex {
         z-index: 1;
     }
 
-nav.menu {
+    nav.menu {
         /* height: 100vh; */
         width: 200px;
         padding: 0px 30px;
